@@ -451,6 +451,7 @@ header {
 /* TESTIMONIALS */
 /* ----------------------------------------------- */
 
+/*
 .section-testimonials {
     background-image: -webkit-linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(img/back-customers-min.jpg);
     background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(img/back-customers-min.jpg);
@@ -458,6 +459,7 @@ header {
     color: #fff;
     background-attachment: fixed;
 }
+*/
 
 blockquote {
     padding: 2%;
