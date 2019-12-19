@@ -215,6 +215,11 @@ header {
     background-attachment: fixed;
 }
 
+header nav div:first-child {
+    float: right;
+    margin-right: 10px;
+}
+
 .hero-text-box {
     position: absolute;
     width: 1140px;
@@ -245,7 +250,7 @@ header {
 .main-nav {
     float: right;
     list-style: none;
-    margin-top: 55px;
+    margin-top: 40px;
 }
 
 .main-nav li {

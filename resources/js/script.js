@@ -1,5 +1,26 @@
 $(document).ready(function () {
+    /*i18n start */
+    var update_texts = function () {
+        $('body').i18n();
+        $('#messages').text($.i18n('message_from', 'Ann', 2, 'female'));
+    };
 
+    $('.lang-switch').click(function (e) {
+        e.preventDefault();
+        $.i18n().locale = $(this).data('locale');
+        update_texts();
+    });
+
+    $.i18n().load({
+        'en': 'resources/i18n/en.json',
+        'hi': 'resources/i18n/hi.json'
+    }).done(function () {
+        update_texts();
+    });
+
+
+
+    /*i18n end */
 
     /* For the sticky navigation */
     $('.js--section-features').waypoint(function (direction) {
@@ -85,4 +106,8 @@ $(document).ready(function () {
             icon.removeClass('ion-close-round');
         }
     });
+
+
+
+
 });
